@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/guillotine_background_dark"
+    android:orientation="vertical">
+    <View
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guillotine_actionbar_background_view_height"
+        android:background="@color/guillotine_background"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_gravity="center">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:contentInsetStart="0dp"
+            style="@style/Toolbar">
+
+            <ImageView
+                android:id="@+id/content_hamburger"
+                style="@style/ImageView.Hamburger"
+                android:src="@drawable/ic_menu_90" />
+
+            <com.example.anuj.myapplication.CanaroTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/activity"
+                android:textSize="@dimen/guillotine_item_text_size" />
+        </android.support.v7.widget.Toolbar>
+
+        <ImageButton
+            android:layout_width="73dp"
+            android:layout_height="59dp"
+            android:id="@+id/imageButton"
+            android:src="@drawable/attendance"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="61dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="52dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/shape"/>
+
+        <com.example.anuj.myapplication.CanaroTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ATTENDANCE"
+            android:textSize="@dimen/guillotine_item_text_size"
+            android:layout_alignTop="@+id/imageButton5"
+            android:layout_marginLeft="20dp" />
+
+
+        <ImageButton
+            android:layout_width="73dp"
+            android:layout_height="59dp"
+            android:id="@+id/imageButton2"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/schedule"
+            android:layout_weight="0.00"
+            android:layout_marginRight="57dp"
+            android:layout_marginEnd="57dp"
+            android:layout_alignBottom="@+id/imageButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/shape"/>
+
+        <com.example.anuj.myapplication.CanaroTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SCHEDULE"
+            android:textSize="@dimen/guillotine_item_text_size"
+            android:id="@+id/imageButton5"
+            android:layout_below="@+id/imageButton2"
+            android:layout_alignLeft="@+id/imageButton6"
+            android:layout_alignStart="@+id/imageButton6"
+            android:layout_marginTop="10dp" />
+
+        <ImageButton
+            android:layout_width="73dp"
+            android:layout_height="59dp"
+            android:id="@+id/imageButton3"
+            android:src="@drawable/ic_profile"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/imageButton"
+            android:layout_alignStart="@+id/imageButton"
+            android:background="@drawable/shape"/>
+
+        <com.example.anuj.myapplication.CanaroTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="PROFILE"
+            android:textSize="@dimen/guillotine_item_text_size"
+            android:layout_below="@+id/imageButton3"
+            android:layout_alignRight="@+id/imageButton3"
+            android:layout_alignEnd="@+id/imageButton3"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imageButton7" />
+
+        <ImageButton
+            android:layout_width="73dp"
+            android:layout_height="59dp"
+            android:id="@+id/imageButton4"
+            android:src="@drawable/star"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/imageButton2"
+            android:layout_alignStart="@+id/imageButton2"
+            android:background="@drawable/shape"/>
+
+        <com.example.anuj.myapplication.CanaroTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="RATE"
+            android:textSize="@dimen/guillotine_item_text_size"
+            android:id="@+id/imageButton6"
+            android:layout_alignTop="@+id/imageButton7"
+            android:layout_alignLeft="@+id/imageButton4"
+            android:layout_alignStart="@+id/imageButton4" />
+
+
+    </RelativeLayout>
+</FrameLayout>

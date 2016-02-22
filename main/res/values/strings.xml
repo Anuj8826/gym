@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">573330692820883</string>
+
+    <string name="profile">PROFILE</string>
+    <string name="feed">ARTICLE</string>
+    <string name="activity">HOME</string>
+    <string name="settings">GYM NEAR</string>
+</resources>
